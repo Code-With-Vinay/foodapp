@@ -245,7 +245,7 @@ function getCookieExpirationDate() {
 }
 
 function navigateToHomepage() {
-  const linkHref = 'foodapp/user/home/index.html';
+  const linkHref = './user/home/index.html';
   window.location.href = linkHref;
 }
 
