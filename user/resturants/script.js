@@ -124,7 +124,7 @@ console.log('Menu Url:', menulocal);
   }
   
   function navigateToLogin() {
-    const linkHref = '/';
+    const linkHref = './';
     window.location.href = linkHref;
   }
 
