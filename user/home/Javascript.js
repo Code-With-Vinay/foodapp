@@ -198,7 +198,7 @@ async function fetchRestaurantMenu(name) {
 }
 
 function navigateToMenu() {
-  const linkHref = 'foodapp/user/resturants/';
+  const linkHref = '/user/resturants/';
   window.location.href = linkHref;
 }
 
