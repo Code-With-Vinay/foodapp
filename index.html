@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App</title>
+    <script src="https://kit.fontawesome.com/9feffce6d7.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper success_call" id="success_call">
+    <lottie-player src="https://lottie.host/545e9b8e-60f5-4f93-8f05-0ef9e22cf688/uJ0md9kVMS.json" background="transparent" speed="1" style="width: 150px; height: 150px" direction="1" mode="slow" loop autoplay></lottie-player>
+    <label class="success_call_text" id="success_call_text"></label>
+  </div>
+
+  <div class="wrapper loading_call" id="loading_animi">
+    <lottie-player src="https://lottie.host/88dc0875-ec96-4163-b7a5-7da65e33239d/apxOLw5riF.json" background="transparent" speed="1" style="width: 100px; height: 100px" direction="1" mode="normal" loop autoplay></lottie-player>
+    <label  class="success_call_text loading">Loading Please Wait...</label>
+  </div>
+
+  
+
+  <div class="wrapper signup-wrapper" id="signup-wrapper">
+
+    <div class="title">Create An Account</div>
+    <div class="tag" >Please Enter Info to Create Account</div>
+
+   <form autocomplete="off" novalidate id="register-form">
+
+    <!-- User -->
+     <div class="input-box" id="user-div">
+       <input id="name" type="text" autocomplete="off" required>
+       <label class="form-label">Name</label>
+       <span class="icon"><i class="fa-solid fa-user"></i></span>
+       <label class="error-label" id="name_error"></label>
+      </div>
+      
+      <!-- Email -->
+      <div class="input-box" id="email-div">
+        <input id="email" type="text" autocomplete="off"  required>
+        <label class="form-label" >Email Address</label> 
+        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+        <label class="error-label" id="email_error"></label>
+      </div>
+      
+      <!-- Password -->
+      <div class="input-box" id="password-div">
+        <input id="password" type="password" autocomplete="off" required>
+        <label class="form-label">Password</label> 
+        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+        <label class="error-label" id="password_error"></label>
+      </div>
+      
+    
+      <div class="input-box" id="signup-btn">
+        <input type="button" value="Register">
+      </div>
+      
+      <span class="signin" id="registered_user">Already have an account?<span class="a">Login</span></span>
+   </form>
+ </div>
+
+ <div class="wrapper signin-wrapper" id="signin-wrapper">
+  <div class="title">Welcome Back</div>
+  <div class="tag" >Login into your account</div>
+
+   <form autocomplete="off" novalidate id="login-form">
+    <label class="error-label-login" id="email_pass_error"></label>
+        <div class="input-box" id="email-div">
+          <input id="login-email" type="text" autocomplete="off"  value="vinayteja433@gmail.com" required>
+          <label class="form-label">Email Address</label> 
+          <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+          <label class="result-label" id="databox"></label>
+        </div>
+
+        <!-- Password -->
+        <div class="input-box" id="password-div">
+          <input id="login-password" type="password"  value="qwert" autocomplete="off" required>
+          <label class="form-label">Password</label> 
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          
+        </div>
+        
+        <a class="forget-label">Forget Password?</a>
+      
+        <div class="input-box" id="login-btn">
+          <input type="button" value="Login">
+        </div>
+        
+        <span class="signin" id="new_user">Don't have an account?<span class="a">Sign up</span></span>
+   </form>
+ </div>
+    
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, #0f0c29,#302b63,#302b63);
+  height: 100vh;
+}
+
+
+.title{
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  user-select: none;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tag{
+  font-size: 12px;
+  font-weight: light;
+  color: #000;
+  user-select: none;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper { 
+  position: absolute;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 17px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+  transition: top .6s linear;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+
+  .signin-wrapper{
+    top: -100%;
+  }
+
+  .signin-wrapper.active{
+    top: 50%;
+  }
+
+  .signup-wrapper{
+    top: -100%;
+  }
+
+  .signup-wrapper.active{
+    top: 50%;
+  }
+
+  .success_call{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  padding: 70px;
+  }
+
+.success_call_text{
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #16860c;
+  margin-top: 25px;
+}
+
+  .loading_call{
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    display: flex;
+    padding: 70px;
+  }
+
+.success_call_text{
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #16860c;
+  margin-top: 25px;
+}
+
+  lottie-player{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5ed240;
+  }
+
+  .wrapper form{
+    margin-top: 30px;
+  }
+  .wrapper form .input-box{
+    position: relative;
+    height: 52px;
+    margin: 25px 0;
+  }
+
+  .wrapper form .error-label{
+    left: 15px;
+    font-size: 14px;
+    position: relative;
+    color: #ff0000;
+  }
+  
+  .wrapper form .error-label-login{
+    font-size: 16px;
+    position: relative;
+    color: #ff0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:  0.8s ease-in;
+  }
+  
+  form .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 35px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #C7BEBE;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+    text-decoration:none;
+    /* remove for input */
+    pointer-events: none;
+  }
+
+.input-box input:focus ~ .form-label,
+.input-box input:valid ~ .form-label {
+  top: 0%;
+  font-size: 13px;
+  color: #5ed240;
+  background: #fff;
+  left: 15px;
+  padding: 2px;
+  transform: translateY(-50%);
+}
+
+.input-box input:focus ~ .icon,
+.input-box input:valid ~ .icon {
+  color: #00cc33;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-color: #00cc33;
+  background: #fff;
+  outline:none;
+}
+
+
+form .form-label  {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  color: #333;
+  background: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+form .forget-label  {
+  left: 20px;
+  position: relative;
+  color: #00cc33;
+  font-size: 14px;
+}
+
+form .signin  {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15px;
+  user-select: none;
+  pointer-events: none;
+}
+
+form .a {
+  text-decoration: none;
+  color: #00cc33;
+  font-size: 16px;
+  margin-left: 2px;
+  cursor: not-allowed;
+  user-select: none;
+
+  
+}
+
+form .icon{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: #333;
+  background: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+form .input-box input[type = "button"] {
+  background: #00cc33;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
