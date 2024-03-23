@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
   
   function navigateToLogin() {
-    const linkHref = '/';
+    const linkHref = './';
     window.location.href = linkHref;
   }
 
@@ -198,7 +198,7 @@ async function fetchRestaurantMenu(name) {
 }
 
 function navigateToMenu() {
-  const linkHref = 'foodapp/user/resturants/';
+  const linkHref = './user/resturants/';
   window.location.href = linkHref;
 }
 
